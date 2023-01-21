@@ -1,0 +1,48 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="shortcut icon" href="Images/favicon-icon.jpg">
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/7.17.2/firebase-database.js"></script>
+<script>
+  const firebaseConfig = {
+    apiKey: "AIzaSyBsMGlzmpmK5pwRtFg8iNTkGxzgsAGaJRc",
+    authDomain: "todoapp-242ed.firebaseapp.com",
+    projectId: "todoapp-242ed",
+    databaseURL: "https://todoapp-94f0c-default-rtdb.firebaseio.com/",
+    storageBucket: "todoapp-242ed.appspot.com",
+    messagingSenderId: "335927048999",
+    appId: "1:335927048999:web:62d6c6c03a5224b9ed4702"
+  };
+  firebase.initializeApp(firebaseConfig);
+</script>
+  <title>TodoApp</title>
+  </head>
+  <body id="WP">
+    <div class="">
+      <h1 id="h1" class="bg-warning fst-italic fw-bold text-center">"Todo App"</h1><br>   
+      
+      <div class="text-center py-5" id="big">
+   <input type="text" placeholder="Write Message" class="text-center bg-dark text-white" width="10" id="items" required>
+  <div class="py-3">  
+   <button  class="btn btn-warning fst-italic pr-5" onclick="add_item()" id="add_items"> Enter Value
+   </button>
+   <button onclick="del_all_item(this)" class="btn btn-danger text-dark fst-italic pr-5 text-center " id="delete_all_items"> Delete Value</button>
+ </div>
+ </div>
+<div  class="container col-md-8 col-sm-12" id="bg"
+><ul id="li">
+</ul
+></div>
+</div>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+  <script src="app.js"></script>
+  <script src="Sweet Alert JS/sweetalert2@9.js"></script>
+</html>

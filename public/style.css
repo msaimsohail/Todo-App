@@ -1,0 +1,324 @@
+body{
+  /* background-image: url("Images/WP2.jpg");   */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-color: rgb(121, 85, 8);
+overflow-x: hidden;
+}
+@font-face {
+  font-family:sans-serif;
+  src: url(Fonts/Ubuntu-Bold.ttf);
+}
+#h1{
+  color: rgb(0, 0, 0);
+  text-align: center;
+  text-shadow:2px 2px 10px rgb(92, 90, 90);
+  font-size: 45px;
+  font-family: 'Ubuntu', sans-serif;
+}
+input{
+  font-family: 'Ubuntu', sans-serif;
+  border: 1px solid  black;
+  border-radius: 10px;
+  height: 45px;
+  font-size: 19px;
+  width: 550px;
+  background-color: honeydew;
+  color: black;
+  text-indent: 0.8ch;
+  text-transform: capitalize;
+  padding-top: 3px;
+}
+
+input:focus{
+  border: 2px solid  black;
+  box-shadow: 0px 0px 20px whitesmoke;
+
+}
+/* #add_items{
+  border-radius: 10px;
+  margin-left: 27px;
+  margin-bottom: 10px;
+  cursor: pointer;
+  height: 55px;
+  width: 55px;
+  border: 1px solid rgb(214, 214, 214);
+} */
+/* #delete_all_items{
+  margin-left: 30px;
+  margin-bottom: 10px;
+  height: 58px;
+  width: 58px;
+  border-radius: 10px;
+  cursor: pointer;
+  border: 1px solid rgb(214, 214, 214);
+} */
+
+span{
+  visibility: hidden;
+}
+
+@media only screen and (max-width: 600px) {
+  body{
+    height: 750px !important;
+    background-repeat:repeat !important;   
+}
+
+  #h1{
+    font-size: 32px !important;
+    text-align: center !important;
+  }
+  
+  input{
+    height: 35px !important; 
+    font-size: 14px !important;
+    width: 340px !important; 
+    padding-top: 3px !important;
+  }
+  #add_items{
+    margin-left: 110px !important;
+    margin-top: 9px !important;
+    height: 50px !important;
+    width: 50px !important;
+  }
+  #delete_all_items{
+    margin-left: 31px !important;
+    margin-top: 10px !important;
+    height: 51px !important;
+    width: 50px !important;
+  }
+
+   ul>li>img{
+    height: 42px !important;
+    width: 42px !important;
+    margin-top: 15px !important;
+    margin-left: 110px !important;
+    display: block !important;
+  } 
+
+  .delclass{
+    margin-left: 190px !important;
+    margin-top: -40px !important;
+    height: 49px;
+  }
+  
+  #big{
+    margin-left: -4.5px !important;
+  }
+  
+  #bg{
+  margin-left: -56px !important;
+  }
+
+ul{
+  margin-top: -55px !important;
+}
+li{
+   height: 28px !important;
+   font-size: 11.6px !important;
+   width: 331px !important;
+   margin-top: 65px !important;
+   text-indent: 0.5ch !important;
+}
+}
+
+@media only screen and (min-device-width: 600px) and (max-device-width: 800px) {
+#big{
+/* padding-left: -10px !important; */
+margin-left: 40px !important;
+}
+#bg{
+  margin-left: -20px !important;
+}
+
+#add_items{
+margin-left: 190px !important;
+margin-top: 11px !important;
+}
+#delete_all_items{
+margin-top: 11px !important;
+}
+
+ul>li>img{
+  height: 43px !important;
+  width: 45px !important;
+  margin-top: 15px !important;
+  margin-left: 200px !important;
+  display: block !important;
+}
+
+.delclass{
+  margin-left: 290px !important;
+  margin-top: -46px !important;
+  height: 50px !important;
+  width: 53px !important;
+}
+
+li{
+  margin-top: 65px !important;
+}
+}
+
+@media only screen and (min-device-width: 800px) and (max-device-width: 1000px) {
+  #big{
+  margin-left: 100px !important;
+  }
+  #bg{
+    margin-left: 40px !important;
+  }
+  
+  #add_items{
+  margin-left: 190px !important;
+  margin-top: 11px !important;
+  }
+  #delete_all_items{
+  margin-top: 11px !important;
+  }
+  
+  ul>li>img{
+    height: 43px !important;
+    width: 45px !important;
+    margin-top: 15px !important;
+    margin-left: 200px !important;
+    display: block !important;
+  }
+  
+  .delclass{
+    margin-left: 290px !important;
+    margin-top: -46px !important;
+    height: 50px !important;
+    width: 53px !important;
+  }
+  
+  li{
+    margin-top: 65px !important;
+  }
+  }
+
+
+@media only screen and (min-device-width: 1350px) and (max-device-width: 1550px) {
+#big{
+padding-left: 40px !important;
+}
+#bg{
+padding-left: 40px !important;
+}
+}
+
+@media only screen and (min-device-width: 1550px) and (max-device-width: 1750px) {
+#big{
+padding-left: 150px !important;
+}
+#bg{
+padding-left: 165px !important;
+}
+}
+
+@media only screen and (min-device-width: 1750px) and (max-device-width: 1950px) {
+#big{
+padding-left: 200px !important;
+}  
+#bg{
+padding-left: 220px !important;
+}
+}
+
+
+@media only screen and (min-device-width: 1950px) and (max-device-width: 2150px) {
+#big{
+padding-left: 250px !important;
+}  
+#bg{
+padding-left: 275px !important;
+}
+}
+
+@media only screen and (min-device-width: 2150px) and (max-device-width: 2300px) {
+#big{
+padding-left: 280px !important;
+}  
+#bg{
+padding-left: 310px !important;
+}
+}
+
+@media only screen and (min-device-width: 2300px) and (max-device-width: 2500px) {
+#big{
+padding-left: 320px !important;
+}  
+#bg{
+padding-left: 360px !important;
+}
+}
+
+@media only screen and (min-device-width: 2500px) and (max-device-width: 2700px) {
+#big{
+padding-left: 380px !important;
+}  
+#bg{
+padding-left: 430px !important;
+}
+}
+
+
+ul>li>img{
+  width: 60px;
+  height: 5vh;
+  /* padding-left: 5%; */
+  margin-top: -60px ;
+  margin-left: 600px;
+  cursor: pointer;
+}
+
+div>ul>li>img:hover{
+border-radius: 10px;
+box-shadow: 0px 0px 20px whitesmoke;
+border: 1px solid black;
+background-color: rgb(26, 26, 26);
+height: 48px;
+}
+
+#add_items:hover,#delete_all_items:hover{
+box-shadow: 0px 0px 20px rgb(241, 45, 45);
+border: 2px solid rgb(117, 1, 1);
+}
+
+.delclass{
+  margin-left: 678px ;
+  margin-top: -115px;
+  height: 45px;
+  border-radius: 15%;
+}
+.ediclass{
+  height: 45px;
+  border-radius: 15%;
+}
+ul{
+  margin-top: -8px;
+}
+li{
+  text-align: center;
+  padding-top: 4.5px;
+  text-transform: capitalize;
+  text-indent: 1ch;
+  list-style: none;
+  display: block;
+   border-radius: 10px;
+   height: 35px;
+   font-family: 'Ubuntu', sans-serif;
+   font-size: 18px;
+   width: 550px;
+   background-color: rgba(203, 214, 203, 0.808);
+   color: rgb(0, 0, 0);
+   cursor: pointer;
+   border: 1px solid rgb(255, 210, 10);
+   /* margin-left: 17px; */
+   margin-top: 29px;
+}
+li:hover,input:hover{
+  box-shadow: 0px 0px 20px rgb(255, 217, 2);
+  border: 1px solid rgb(187, 255, 0);
+}
+
+
+
